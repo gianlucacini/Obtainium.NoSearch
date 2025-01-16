@@ -439,9 +439,7 @@ class AddAppPageState extends State<AddAppPage> {
         ]);
 
     bool shouldShowSearchBar() =>
-        sourceProvider.sources.where((e) => e.canSearch).isNotEmpty &&
-        pickedSource == null &&
-        userInput.isEmpty;
+        false;
 
     Widget getSearchBarRow() => Row(
           children: [
